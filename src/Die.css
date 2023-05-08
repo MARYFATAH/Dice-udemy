@@ -1,0 +1,44 @@
+i{
+    padding: 0.5em;
+    margin: 10px;
+    color: rgb(122, 89, 206);
+}
+ .DiceRoll button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 8em;
+ }
+  .DiceRoll button:hover{
+    background-color: rgb(155, 98, 212);
+    cursor: pointer;
+  }
+   .DiceRoll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+   }
+   .DiceRoll-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+   }
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10%, 90% { transform: translate(-10px, 0); }
+  20%, 80% { transform: translate(10px, 0); }
+  30%, 50%, 70% { transform: translate(-10px, 0); }
+  40%, 60% { transform: translate(10px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Example usage */
+.shake {
+ animation-name:shake;
+ animation-duration: 1s;
+}
